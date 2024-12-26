@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand">Admin Dashboard</span>
+      <button
+        id="logoutBtn"
+        class="btn btn-outline-light"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <div class="row">
+      <div class="col">
+        <h2>Overview</h2>
+        <hr />
+        <p class="lead">
+          Total Properties Listed: <span id="totalProperties" class="fw-bold">0</span>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2>Quick Actions</h2>
+        <hr />
+        <button 
+          class="btn btn-success me-2 mb-2" 
+          onclick="window.location.href='add-property.html'"
+        >
+          Add Property
+        </button>
+        <button 
+          class="btn btn-info mb-2" 
+          onclick="window.location.href='manage-properties.html'"
+        >
+          Manage Listings
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

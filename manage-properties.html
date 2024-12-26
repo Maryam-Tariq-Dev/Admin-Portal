@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage Properties</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand">Manage Properties</span>
+      <button
+        id="logoutBtn"
+        class="btn btn-outline-light"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-12">
+        <table id="propertiesTable" class="table table-bordered table-hover">
+          <thead class="table-light">
+            <tr>
+              <th>Property Name</th>
+              <th>Location</th>
+              <th>Type</th>
+              <th>Price</th>
+              <th class="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamically loaded rows will appear here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
